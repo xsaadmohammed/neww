@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Natty Meals </title>
+  <title>Natty Meals</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,10 +14,12 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -26,10 +28,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  
   <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.0s;
    
 }
 
@@ -56,63 +59,76 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
-      <i class="bi bi-phone d-flex align-items-center"><span>+9647731592910</span></i>
-      <i class="bi bi-clock d-flex align-items-center ms-4"><span>2:00 PM - 12:00 AM</span></i>
-    </div>
-  </section>
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-  	        <i class="bi bi-list mobile-nav-toggle m-3"></i>
-  	<a href="tel:07731592910"><i class="bi bi-phone m-3"></i></a>
-  	<nav id="navbar" class="navbar order-last order-lg-0">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <div class="logo me-auto">
-        <h1><a href="index.html"></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+9647731592910</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Open From 2PM-12AM</span></i>
       </div>
 
-      
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">En</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+ 
+   <!--phone here-->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+       <a style="font-size:20px;" href="#book-a-table" class="btn-book animated fadeInUp scrollto">Order Online</a>
+        <a href="tel:0773152910"><i class="fas fa-phone m-3"></i></a>
+ 
+   <!--phone here-->
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+
+    
+          
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Subscriptions</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          
         </ul>
-
+    
+ 
       </nav><!-- .navbar -->
-
-      <a href="#order-online" class="book-a-table-btn scrollto">Order Online</a>
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
 
     </div>
+    
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" >
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>Natty Meals</span></h1>
+          <h2>Your food is your medicine.</h2>
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(img/slide-1.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><span>Natty Meals</span> Restaurant</h2>
-                <p class="animate__animated animate__fadeInUp">Your food is your medicine..</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#order-online" class="btn-book animate__animated animate__fadeInUp scrollto">Order Online</a>
-                </div>
-              </div>
-            </div>
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Order Online</a>
           </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative"  >
+      
+        </div>
 
       </div>
     </div>
@@ -120,19 +136,18 @@
 
   <main id="main">
 
-
-    <!-- ======= Whu Us Section ======= -->
-    <section id="about" class="why-us">
-      <div class="container">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" >
 
         <div class="section-title">
-       
+          <p>Weekly and monthly subscription plans</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4">
-            <div class="box">
+            <div class="box"  >
               <span>What is monthly/weekly subscription?</span>
               <p>Weekly subscription |
               <br>
@@ -168,9 +183,9 @@ There are two way:
             </div>
           </div>
 
-          <div class="col-lg-4 mt-4 mt-lg-0" style="text-align: right">
-            <div class="box">
-              <span>ماهي الاشتراكات الاسبوعية والشهرية؟</span>
+<div class="col-lg-4 mt-4 mt-lg-0" style="text-align: right">
+            <div class="box"  >
+            	 <span>ماهي الاشتراكات الاسبوعية والشهرية؟</span>
               <p>اشتراك اسبوعي |
 <br>
 <br>
@@ -208,9 +223,9 @@ There are two way:
             </div>
           </div>
 
-          <div class="col-lg-4 mt-4 mt-lg-0" style="text-align: right">
-            <div class="box">
-               <span>به شداري كردني هەفتانە و مانگانەکان چین؟</span>
+  <div class="col-lg-4 mt-4 mt-lg-0" style="text-align: right">
+            <div class="box"  >
+            	 <span>به شداري كردني هەفتانە و مانگانەکان چین؟</span>
               <p>بەشداری هەفتانە |
 <br>
 <br>
@@ -251,39 +266,43 @@ There are two way:
         </div>
 
       </div>
-    </section><!-- End Whu Us Section -->
-
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
-      <div class="container">
+    </section><!-- End Why Us Section -->
+  <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" >
 
         <div class="section-title">
-          <h2>Check our tasty <span>Menu</span></h2>
+          <h2>Menu</h2>
+          <p>Check Our Tasty Menu</p>
         </div>
 
-        <div class="row m-3">
+        <div class="row"  >
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-     <li data-filter="*" class="filter-active" >All Menu</li>
-              <li data-filter=".filter-Main" >Main Dishes</li>
-              <li data-filter=".filter-Low" >Low Carbs</li>
-              <li data-filter=".filter-Keto" >Keto Meals</li>
+              <li data-filter="*" class="filter-active">All Menu</li>
+              <li data-filter=".filter-Main">Main Dishes</li>
+              <li data-filter=".filter-Low">Low Carbs</li>
+              <li data-filter=".filter-Keto">Keto Meals</li>
               <li data-filter=".filter-Burgers" >Burgers</li>
-              <li data-filter=".filter-Spaghetti" >Spaghetti- Pasta</li>
-              <li data-filter=".filter-Salads" >Salads</li>
-              <li data-filter=".filter-Vegetarian" >Vegetarian Meals </li>
-              <li data-filter=".filter-Sandwiches" >Sandwiches</li>
-              <li data-filter=".filter-Bulking" >Bulking Meals </li>
-              <li data-filter=".filter-Kids" >Kids Meals</li>
-              <li data-filter=".filter-Soups" >Soups</li>
-              <li data-filter=".filter-Extras" >Extras</li>
+              <li data-filter=".filter-Spaghetti">Spaghetti- Pasta</li>
+              <li data-filter=".filter-Salads">Salads</li>
+              <li data-filter=".filter-Vegetarian">Vegetarian Meals </li>
+              <li data-filter=".filter-Sandwiches">Sandwiches</li>
+              <li data-filter=".filter-Bulking">Bulking Meals </li>
+              <li data-filter=".filter-Kids">Kids Meals</li>
+              <li data-filter=".filter-Soups">Soups</li>
+              <li data-filter=".filter-Extras">Extras</li>
             </ul>
           </div>
         </div>
 
-<div class="row menu-container m-3">
-	
-       <div class="card menu-item filter-Burgers">
+
+
+	<div class="row menu-container"  >
+	    	<div id="allm">
+ 	   	
+<!-- cards  here-->
+	<div class="card menu-item filter-Burgers">
   <img src="img/1.jpg" alt="Avatar" style="width:100%">
   <div class="container">
       <h4 class="m-3"><a href="#" >برغر دجاج • Chicken Burger -> </a><span>5000,IQD</span></h4>
@@ -831,14 +850,70 @@ There are two way:
       <p class="menf"> spaghetti + vegetables + salad + sauce </p>
   </div>
 </div>
+ <br>
 </div>
+
+
+<!-- cards here-->
+
+        </div>
 
       </div>
     </section><!-- End Menu Section -->
 
-    <!-- ======= Order Online Section ======= -->
-  </script>
-    <section id="order-online" class="book-a-table">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" >
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div class="container" >
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Sarwari Rd, Sulaymaniyah</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  OPEN FROM:<br>
+                  2:00 PM - 12:00 AM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>agzonlinetraining@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+9647731592910</p>
+              </div>
+
+            </div>
+
+          </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+   
+       <!-- ======= Send Message To Telegram ======= -->
+       	   </script>
+    <section id="book-a-table" class="book-a-table">
       <div class="container" >
 
         <div class="section-title">
@@ -875,81 +950,35 @@ There are two way:
     </section>
         </script>
 
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
-        </div>
-      </div>
-
-
-      <div class="container mt-5">
-
-        <div class="info-wrap">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 info">
-              <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>Sarwari Rd, Sulaymaniyah</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-clock"></i>
-              <h4>Open Hours:</h4>
-              <p> 2:00 PM - 12:00 AM</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>Nattymealsofficial@gmail.com</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+9647731592910</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <h3>Natty Meals</h3>
-      <div class="social-links">
-        <a href="https://www.facebook.com/112646854664719" class="facebook"><i class="bx bxl-facebook"></i></a>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Natty Meals</h3>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/112646854664719" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://instagram.com/natty.meals.iraq" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
-     
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Natty Meals-free-restaurant-bootstrap-theme/ -->
-        
-      </div>
+              </div>
+            </div>
+          </div>
     </div>
   </footer><!-- End Footer -->
 
+  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
